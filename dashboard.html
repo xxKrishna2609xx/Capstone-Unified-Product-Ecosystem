@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | Unified Product Experience Ecosystem</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Shared Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">⚡</div>
+        <span>Unified Ecosystem</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">🏠 Portal</a></li>
+        <li><a href="catalog.html" class="nav-link">🛍️ Catalog</a></li>
+        <li><a href="dashboard.html" class="nav-link active">👤 Dashboard <span class="badge badge-primary" style="margin-left: 4px;">2</span></a></li>
+        <li><a href="admin.html" class="nav-link">⚙️ Admin Console</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="role-badge">
+          <span class="role-indicator-dot"></span>
+          <span>Role: Registered Customer</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <!-- Page Header -->
+      <div style="margin-bottom: 2rem;">
+        <span class="badge badge-primary">User Module</span>
+        <h1 style="margin-top: 0.35rem;">Customer Dashboard</h1>
+        <p>Manage your account settings, inspect saved wishlist products, and track simulated ecosystem orders.</p>
+      </div>
+
+      <!-- Dashboard Layout -->
+      <div class="dashboard-grid">
+        <!-- Left: Profile & Summary Card -->
+        <aside>
+          <div class="card user-profile-card">
+            <div class="user-avatar-wrap">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80" alt="Alex Johnson">
+            </div>
+            <h3 style="margin-bottom: 0.25rem;">Alex Johnson</h3>
+            <span class="badge badge-primary" style="margin-bottom: 1rem; display: inline-block;">Verified VIP Customer</span>
+            <p style="font-size: 0.85rem; margin-bottom: 0.5rem; word-break: break-all;">alex.johnson@ecosystem.io</p>
+            <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 1.25rem;">742 Innovation Way, Silicon Valley, CA</p>
+            
+            <a href="#profile-settings" class="btn btn-outline btn-sm" style="width: 100%; margin-bottom: 1.5rem;">
+              ⚙️ Account Preferences
+            </a>
+
+            <div style="border-top: 1px solid var(--border-color); padding-top: 1.25rem; text-align: left;">
+              <h4 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.75rem;">Account Overview</h4>
+              
+              <div class="flex items-center justify-between" style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+                <span>Total Orders:</span>
+                <strong>2 Placed</strong>
+              </div>
+
+              <div class="flex items-center justify-between" style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+                <span>Wishlist Items:</span>
+                <strong>2 Saved</strong>
+              </div>
+
+              <div class="flex items-center justify-between" style="font-size: 0.9rem;">
+                <span>Total Spend:</span>
+                <strong style="color: var(--primary);">$389.49</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right: Content (Wishlist & Orders) -->
+        <section>
+          <!-- Section 1: Saved Wishlist -->
+          <div class="card" style="margin-bottom: 2rem;">
+            <div class="flex items-center justify-between" style="margin-bottom: 1.25rem;">
+              <div>
+                <h3 style="margin-bottom: 0.2rem;">❤️ Saved Wishlist (2 Items)</h3>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">Items you bookmarked for later consideration.</p>
+              </div>
+              <a href="catalog.html" class="btn btn-sm btn-outline">+ Browse Catalog</a>
+            </div>
+
+            <div class="grid grid-cols-2">
+              <!-- Wishlist Item 1 -->
+              <div class="card" style="display: flex; gap: 1rem; padding: 1rem;">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80" alt="Aura Wireless Headphones" style="width: 75px; height: 75px; object-fit: cover; border-radius: var(--radius-md);">
+                <div style="flex: 1; min-width: 0;">
+                  <h4 style="font-size: 0.95rem; margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Aura Wireless Headphones</h4>
+                  <div style="color: var(--primary); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem;">$249.99</div>
+                  <div class="flex gap-1">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">View Specs</a>
+                    <a href="catalog.html" class="btn btn-sm btn-primary" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">Buy</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wishlist Item 2 -->
+              <div class="card" style="display: flex; gap: 1rem; padding: 1rem;">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&auto=format&fit=crop&q=80" alt="Chronos Smartwatch" style="width: 75px; height: 75px; object-fit: cover; border-radius: var(--radius-md);">
+                <div style="flex: 1; min-width: 0;">
+                  <h4 style="font-size: 0.95rem; margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Chronos Smartwatch Series 6</h4>
+                  <div style="color: var(--primary); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem;">$329.00</div>
+                  <div class="flex gap-1">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">View Specs</a>
+                    <a href="catalog.html" class="btn btn-sm btn-primary" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">Buy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Order History -->
+          <div class="card" style="margin-bottom: 2rem;">
+            <div class="flex items-center justify-between" style="margin-bottom: 1.25rem;">
+              <div>
+                <h3 style="margin-bottom: 0.2rem;">📦 Order History &amp; Tracking</h3>
+                <p style="font-size: 0.875rem; margin-bottom: 0;">Simulated transactions with live fulfillment status.</p>
+              </div>
+            </div>
+
+            <!-- Order 1 -->
+            <div class="order-timeline-item">
+              <div class="flex items-center justify-between" style="margin-bottom: 0.75rem;">
+                <div>
+                  <strong style="font-size: 1rem; color: var(--text-primary);">ORD-8942</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: 0.5rem;">October 21, 2026</span>
+                </div>
+                <span class="badge badge-success">● Delivered</span>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <div class="flex items-center justify-between" style="font-size: 0.875rem; padding: 0.35rem 0; border-bottom: 1px dashed var(--border-color);">
+                  <span>Aura Wireless Noise-Cancelling Headphones <span style="color: var(--text-muted); font-size: 0.8rem;">(x1)</span></span>
+                  <strong>$249.99</strong>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between" style="font-size: 0.95rem; font-weight: 700;">
+                <span>Total Amount Paid:</span>
+                <span style="color: var(--primary); font-size: 1.1rem;">$249.99</span>
+              </div>
+            </div>
+
+            <!-- Order 2 -->
+            <div class="order-timeline-item">
+              <div class="flex items-center justify-between" style="margin-bottom: 0.75rem;">
+                <div>
+                  <strong style="font-size: 1rem; color: var(--text-primary);">ORD-7619</strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: 0.5rem;">October 15, 2026</span>
+                </div>
+                <span class="badge badge-primary">● In Transit (Shipped)</span>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <div class="flex items-center justify-between" style="font-size: 0.875rem; padding: 0.35rem 0; border-bottom: 1px dashed var(--border-color);">
+                  <span>Apex Mechanical Gaming Keyboard <span style="color: var(--text-muted); font-size: 0.8rem;">(x1)</span></span>
+                  <strong>$139.50</strong>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between" style="font-size: 0.95rem; font-weight: 700;">
+                <span>Total Amount Paid:</span>
+                <span style="color: var(--primary); font-size: 1.1rem;">$139.50</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Profile Settings Form -->
+          <div class="card" id="profile-settings">
+            <h3 style="margin-bottom: 0.25rem;">⚙️ Profile &amp; Shipping Settings</h3>
+            <p style="font-size: 0.875rem; margin-bottom: 1.25rem;">Standard static form layout styled with design system tokens.</p>
+            
+            <form action="#" method="get">
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" value="Alex Johnson">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" value="alex.johnson@ecosystem.io">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Default Shipping Address</label>
+                <input type="text" class="form-control" value="742 Innovation Way, Silicon Valley, CA 94025">
+              </div>
+              <div class="flex justify-between items-center" style="margin-top: 1rem;">
+                <span style="font-size: 0.825rem; color: var(--text-muted);">Changes stored locally for demonstration.</span>
+                <button type="button" class="btn btn-primary btn-sm">Save Profile Changes</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Unified Product Experience Ecosystem</strong> &bull; User Dashboard</p>
+      <p style="color: var(--text-muted); font-size: 0.85rem;">Designed purely with semantic HTML5 and responsive CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

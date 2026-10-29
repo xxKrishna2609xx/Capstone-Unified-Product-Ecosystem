@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Operations Console | Unified Product Experience Ecosystem</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Shared Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">⚡</div>
+        <span>Unified Ecosystem</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">🏠 Portal</a></li>
+        <li><a href="catalog.html" class="nav-link">🛍️ Catalog</a></li>
+        <li><a href="dashboard.html" class="nav-link">👤 Dashboard <span class="badge badge-primary" style="margin-left: 4px;">2</span></a></li>
+        <li><a href="admin.html" class="nav-link active">⚙️ Admin Console</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="role-badge">
+          <span class="role-indicator-dot" style="background-color: var(--danger); box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);"></span>
+          <span>Role: System Administrator</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <!-- Page Title & Actions -->
+      <div class="flex items-center justify-between" style="margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="badge badge-danger">Admin Console</span>
+          <h1 style="margin-top: 0.35rem;">Inventory &amp; Operations Hub</h1>
+          <p>Oversee catalog items, configure pricing, track stock levels, and monitor ecosystem performance.</p>
+        </div>
+        <div class="flex gap-2">
+          <a href="#add-product-section" class="btn btn-primary">+ Add New Product</a>
+        </div>
+      </div>
+
+      <!-- Real-time Admin KPI Cards -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon green">💵</div>
+          <div>
+            <div class="metric-value">$1,428.50</div>
+            <div class="metric-label">Simulated Gross Revenue</div>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon blue">📦</div>
+          <div>
+            <div class="metric-value">6</div>
+            <div class="metric-label">Active Catalog Items</div>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon purple">📊</div>
+          <div>
+            <div class="metric-value">69 Units</div>
+            <div class="metric-label">Total Units In Stock</div>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon amber">⚠️</div>
+          <div>
+            <div class="metric-value">2 Items</div>
+            <div class="metric-label">Low Stock Alerts (≤5)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inventory Management Table -->
+      <div class="card" style="margin-bottom: 2.5rem;">
+        <div class="flex items-center justify-between" style="margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h3 style="margin-bottom: 0.25rem;">Live Catalog Inventory</h3>
+            <p style="font-size: 0.875rem; margin-bottom: 0;">Comprehensive inventory registry with stock status and action tools.</p>
+          </div>
+          <div style="min-width: 250px;">
+            <input type="text" class="form-control" placeholder="Search inventory records...">
+          </div>
+        </div>
+
+        <div class="admin-table-container">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock Level</th>
+                <th>Rating</th>
+                <th>Status</th>
+                <th style="text-align: right;">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80" alt="Aura Headphones" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Aura Wireless Noise-Cancelling Headphones</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-101</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Audio</span></td>
+                <td><strong style="color: var(--primary);">$249.99</strong></td>
+                <td><span class="badge badge-success">18 in stock</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.8</span></td>
+                <td><span class="badge badge-secondary">Featured</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&auto=format&fit=crop&q=80" alt="Chronos Smartwatch" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Chronos Smartwatch Series 6</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-102</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Wearables</span></td>
+                <td><strong style="color: var(--primary);">$329.00</strong></td>
+                <td><span class="badge badge-success">12 in stock</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.9</span></td>
+                <td><span class="badge badge-secondary">Featured</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=700&auto=format&fit=crop&q=80" alt="Apex Keyboard" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Apex Mechanical Gaming Keyboard</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-103</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Electronics</span></td>
+                <td><strong style="color: var(--primary);">$139.50</strong></td>
+                <td><span class="badge badge-success">24 in stock</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.7</span></td>
+                <td><span class="badge badge-secondary">Featured</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 4 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=700&auto=format&fit=crop&q=80" alt="Lumina Lamp" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Lumina Ergonomic Desk Lamp</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-104</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Accessories</span></td>
+                <td><strong style="color: var(--primary);">$79.99</strong></td>
+                <td><span class="badge badge-warning">Low: 5 left</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.6</span></td>
+                <td><span style="color: var(--text-muted); font-size: 0.8rem;">Standard</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 5 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=700&auto=format&fit=crop&q=80" alt="Veloce Monitor" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Veloce 4K Ultra-Wide Monitor 34"</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-105</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Electronics</span></td>
+                <td><strong style="color: var(--primary);">$649.00</strong></td>
+                <td><span class="badge badge-warning">Low: 8 left</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.9</span></td>
+                <td><span class="badge badge-secondary">Featured</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Row 6 -->
+              <tr>
+                <td>
+                  <div class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=700&auto=format&fit=crop&q=80" alt="Pulse Pro Earbuds" class="admin-table-thumb">
+                    <div>
+                      <strong style="color: var(--text-primary); font-size: 0.95rem;">Pulse Pro Wireless Earbuds</strong>
+                      <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">prod-107</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-info">Audio</span></td>
+                <td><strong style="color: var(--primary);">$119.99</strong></td>
+                <td><span class="badge badge-danger">Critical: 2 left</span></td>
+                <td><span style="color: var(--warning); font-size: 0.85rem;">★ 4.4</span></td>
+                <td><span style="color: var(--text-muted); font-size: 0.8rem;">Standard</span></td>
+                <td style="text-align: right;">
+                  <div class="flex items-center gap-1" style="justify-content: flex-end;">
+                    <a href="product-detail.html" class="btn btn-sm btn-outline" title="Inspect page">👁️ View</a>
+                    <button class="btn btn-sm btn-outline" type="button">✏️ Edit</button>
+                    <button class="btn btn-sm btn-danger" type="button">🗑️</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Add Product Form Card -->
+      <div class="card" id="add-product-section" style="margin-bottom: 2.5rem;">
+        <h3 style="margin-bottom: 0.25rem;">+ Add New Catalog Product</h3>
+        <p style="font-size: 0.875rem; margin-bottom: 1.5rem;">Clean form layout designed with responsive grid components.</p>
+        
+        <form action="#" method="get">
+          <div class="grid grid-cols-2">
+            <div class="form-group">
+              <label class="form-label">Product Name</label>
+              <input type="text" class="form-control" placeholder="e.g. Apex Hyper Wireless Mouse">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select class="form-select">
+                <option>Electronics</option>
+                <option>Audio</option>
+                <option>Wearables</option>
+                <option>Accessories</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <div class="form-group">
+              <label class="form-label">Price ($)</label>
+              <input type="number" class="form-control" placeholder="89.99">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Stock Quantity</label>
+              <input type="number" class="form-control" placeholder="25">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Detailed Description</label>
+            <textarea class="form-control" rows="3" placeholder="Enter key device specs and feature highlights..."></textarea>
+          </div>
+
+          <div class="flex justify-between items-center" style="margin-top: 1rem;">
+            <label class="flex items-center gap-1" style="font-size: 0.9rem; cursor: pointer;">
+              <input type="checkbox" checked> Feature on Portal Homepage
+            </label>
+            <button type="button" class="btn btn-primary">Create &amp; Publish Product</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- System Diagnostic Overview -->
+      <div class="card" style="background-color: var(--bg-surface); border-left: 4px solid var(--primary);">
+        <div class="flex items-center justify-between" style="flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h3 style="margin-bottom: 0.25rem;">Ecosystem Architecture Status</h3>
+            <p style="margin-bottom: 0; font-size: 0.9rem;">
+              All 5 static pages (Portal, Catalog, Product Detail, Dashboard, and Admin Console) share identical design tokens and CSS variables.
+            </p>
+          </div>
+          <span class="badge badge-success">5 Pages Verified</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Unified Product Experience Ecosystem</strong> &bull; Administrative Console</p>
+      <p style="color: var(--text-muted); font-size: 0.85rem;">Designed purely with semantic HTML5 and responsive CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
